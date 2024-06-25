@@ -1,0 +1,94 @@
+//EXAMPLE
+
+var city = "Rome"
+
+if city == "Rapa Nui" { 
+  print("Moai 🗿")
+} else if city == "New York" {
+  print("Statue of Liberty 🗽")
+} else if city == "Rome" {
+  print("Colosseum 🏛")
+} else {
+  print("A famous landmark is the Eiffel Tower!")
+}
+
+switch city {
+  case "Rapa Nui":
+    print("Moai 🗿")
+  case "New York":  
+    print("Statue of Liberty 🗽")
+  case "Rome":
+    print("Colosseum 🏛")
+  default: 
+    print("A famous landmark is the Eiffel Tower!")
+}
+
+
+
+var secretIdentity = "Tony Stark"
+var superheroName: String 
+ 
+if secretIdentity == "Tony Stark" {
+  superheroName = "Iron Man"
+} else if secretIdentity == "Natasha Romanoff" {
+  superheroName = "Black Widow" 
+} else if secretIdentity == "Prince T'Challa" {
+  superheroName = "Black Panther"
+} else if secretIdentity == "Thor" {
+  superheroName = "Thor"
+} else {
+  superheroName = "Unknown"
+}
+
+switch secretIdentity {
+  case "Tony Stark": 
+    superheroName = "Iron Man"
+  case "Natasha Romanoff":
+    superheroName = "Black Widow"
+  case "Prince T'Challa":
+    superheroName = "Black Panther"
+  case "Thor":
+    superheroName = "Thor" 
+  default:
+    superheroName = "Unknown"
+    print(superheroName)
+}
+
+print(superheroName)
+
+
+var year = 1943
+
+switch year {
+  case 1701...1800:
+    print("18th century") 
+  case 1801...1900:
+    print("19th century")
+  case 1901...2000: 
+    print("20th century")
+  case 2001...2100: 
+    print("21st century")
+  default: 
+    print("You're a time traveler!")
+} 
+// Prints: 20th century
+
+
+
+var episode = 8
+var villain: String 
+
+// Write your code below 🦹
+
+switch episode {
+  case 1...3:
+    villain = "Emperor Palpatine"
+  case 4...6:
+    villain = "Darth Vader"
+  case 7...9:
+    villain = "Kylo Ren"
+  default:
+    villain = ""
+  print(villain)
+}
+print(villain)
