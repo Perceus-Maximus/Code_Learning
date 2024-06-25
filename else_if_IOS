@@ -1,0 +1,26 @@
+// An else statement is used to execute a block of code when the condition of an if statement is false. Think of the else to be synonymous with the word, otherwise. Do this if a condition is true, otherwise, do something else:
+
+// if condition {
+//    this code will run if condition is true
+// } else {
+//    this code will run if condition is false 
+// }
+
+
+// var isLoggedIn = false
+
+// if isLoggedIn {
+//   print("Welcome back!") 
+// } else {
+//   print("Access Denied.")  
+// }
+// Prints: Access Denied.
+
+var wearGlasses = false
+
+if wearGlasses {
+  print("I wear glasses")
+} else {
+  print("I don't wear glasses")
+}
+// prints I don't wear glasses
