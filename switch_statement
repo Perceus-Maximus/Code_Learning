@@ -92,3 +92,63 @@ switch episode {
   print(villain)
 }
 print(villain)
+
+
+var country = "India"
+
+switch country {
+  case "USA", "Mexico", "Canada":
+    print("\(country) is in North America. 🌏")
+  case "South Africa", "Nigeria", "Kenya":
+    print("\(country) is in Africa. 🌍")
+  case "Bangladesh", "China", "India":
+    print("\(country) is in Asia. 🌏")
+  default: 
+    print("This country is somewhere in the world!")
+} 
+// Prints: India is in Asia. 🌏
+
+
+var planet = "Saturn" 
+
+// Write your code below 🪐
+
+switch planet {
+  case "Earth", "Mercury", "Venus", "Mars":
+    print("Terrestrial planet")
+  case "Saturn", "Jupiter", "Uranus", "Neptune":
+    print("Jovian planet")
+  default: 
+    print("Unknown planet")
+}
+
+
+//ADVANCED 
+
+var randomNumber = Int.random(in: 0...10)
+
+switch randomNumber {
+  case let x where x % 2 == 0:
+    print("\(randomNumber) is even")
+  case let x where x % 2 == 1:
+    print("\(randomNumber) is odd")
+  default:
+    print("Invalid")
+}
+
+// Prints: 7 is odd
+
+var wholeNumber = Int.random(in:10...20)
+
+switch wholeNumber {
+ case let x where x % 2 == 0:
+    print("Composite")
+  case let x where x % 3 == 0:
+    print("Composite")
+  default:
+    print("Prime")
+}
+
+print(wholeNumber)
+
+// Composite 10
