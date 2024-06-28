@@ -1,0 +1,44 @@
+// The logical && operator translates to AND and returns true only when both operands are true. It returns false in all other cases.
+// The logical || operator translates to OR and returns true when either operands are true. When both operands are false, the logical expression evaluates to false.
+// The logical ! operator translates to NOT and negates a Boolean value.
+// The && operator has a higher precedence over the || operator.
+// Parentheses, (), may be used in a logical expression to control the order of operations and improve readability.
+
+
+var time = 8 // PM 
+var phoneInUse = true 
+var brightness: Double
+
+if time >= 8 && phoneInUse {
+  brightness = 0.75 
+} else {
+  brightness = 1 
+}
+print(brightness) // Prints: 0.75
+
+
+// BOOLEAN // OR
+
+var snowing = false 
+var raining = true
+
+if snowing || raining {
+ print("Wear waterproof shoes!")
+}
+
+
+var carInMotion = false
+var insideACar = true
+
+if carInMotion || insideACar {
+  print("Safety first! Buckle up.")
+}
+
+
+let bool1 = (true || false) || false || false 
+let bool2 = !true || (false && false || true)
+let bool3 = !(false && true) && (false || false)
+
+print(bool1) // should be true // prints true
+print(bool2) // should be true // prints true
+print(bool3) // should be false // prints false
