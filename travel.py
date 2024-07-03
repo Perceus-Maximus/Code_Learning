@@ -74,3 +74,54 @@ length_of_destination = len(destination_name)
 # Built-in function: print()
 print(length_of_destination)
 # 28
+
+
+# Min, Max, and Round Built in Functions
+tshirt_price = 9.75
+shorts_price = 15.50
+mug_price = 5.99
+poster_price = 2.00
+
+max_price = max(9.75, 15.50, 5.99, 2.00)
+print(max_price)
+# Prints 15.50
+min_price = min(9.75, 15.50, 5.99, 2.00)
+print(min_price)
+# Prints 2.00
+rounded_price = round(tshirt_price, 1)
+print(rounded_price)
+# Prints 9.8 - seond input is how many decimal places. - O would round to 10 - 2 would round to 9.75
+
+
+favorite_locations = "Paris, Norway, Iceland" # Without adding this line defining our variables outside of the function we would not be able to access favorite locations
+def print_count_locations():
+  favorite_locations = "Paris, Norway, Iceland"
+  print("There are 3 locations")
+# This function will print the favorite locations
+def show_favorite_locations():
+  print("Your favorite locations are: " + favorite_locations)
+print_count_locations()
+show_favorite_locations()
+
+
+def calculate_exchange_usd(us_dollars, exchange_rate):
+  return us_dollars * exchange_rate # Return lets us use a value calculated or "created" in a function outside of the function
+new_zealand_exchange = calculate_exchange_usd(100, 1.4)
+print("100 dollars in US currency would give you " + str(new_zealand_exchange) + " New Zealand dollars")
+# Output: 100 dollars in US currency would give you 140 New Zealand dollars
+
+
+##########
+########### - Hard example
+current_budget = 3500.75
+def print_remaining_budget(budget):
+  print("Your remaining budget is: $" + str(budget)) 
+print_remaining_budget(current_budget)
+
+
+shirt_expense = 9 # Can use this inside and outside of the function
+def deduct_expense(current_budget, shirt_expense):
+  return current_budget - shirt_expense # Lets us declare new_budget after shirt outside the function by assigning it to the called deduct expense function 
+new_budget_after_shirt = deduct_expense(current_budget, shirt_expense) # minus the $9 that is assigned to shirt expense
+print_remaining_budget(new_budget_after_shirt)
+
