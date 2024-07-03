@@ -112,7 +112,7 @@ print("100 dollars in US currency would give you " + str(new_zealand_exchange) +
 
 
 ##########
-########### - Hard example
+########### - Hard example!!!!!!!!!!!!!!!!!!!
 current_budget = 3500.75
 def print_remaining_budget(budget):
   print("Your remaining budget is: $" + str(budget)) 
@@ -125,3 +125,60 @@ def deduct_expense(current_budget, shirt_expense):
 new_budget_after_shirt = deduct_expense(current_budget, shirt_expense) # minus the $9 that is assigned to shirt expense
 print_remaining_budget(new_budget_after_shirt)
 
+
+#### Example of multiple returns for a function
+weather_data = ['Sunny', 'Sunny', 'Cloudy', 'Raining', 'Snowing']
+
+def threeday_weather_report(weather):
+  first_day = " Tomorrow the weather will be " + weather[0] # 0 is 1 in python
+  second_day = " The following day it will be " + weather[1] # 1 is 2 in python
+  third_day = " Two days from now it will be " + weather[2] # 2 is 3 in python
+  return first_day, second_day, third_day
+
+monday, tuesday, wednesday = threeday_weather_report(weather_data)
+print(monday)
+print(tuesday)
+print(wednesday)
+######## Prints: Tomorrow the weather will be Sunny
+######## Prints: The following day it will be Sunny
+######## Prints: Two days from now it will be Cloudy
+
+####### Simplified Example
+def top_tourist_locations_italy():
+  first = "Rome"
+  second = "Venice"
+  third = "Florence"
+  return first, second, third
+
+most_popular1, most_popular2, most_popular3 = top_tourist_locations_italy()
+print(most_popular1) 
+print(most_popular2) 
+print(most_popular3)
+
+
+
+
+###################### BIG EXAMPLE ##########################################
+name = "Bryce"
+def trip_planner_welcome(name):
+  print("Welcome to tripplanner v1.0 " + name)
+trip_planner_welcome(name)
+
+estimated_time = 101.55
+def estimated_time_rounded(estimated_time):
+  rounded_time = round(estimated_time)
+  return rounded_time
+estimate = estimated_time_rounded(estimated_time)
+
+def destination_setup(origin, destination, estimated_time, mode_of_transport="Car"):
+  print("Your trip starts off in " + origin)
+  print("And you are traveling to " + destination)  
+  print("You will be traveling by " + mode_of_transport)
+  print("It will take approximately " + str(estimated_time) + " hours")
+  
+destination_setup("New York", "Italy", estimate, "Uber")
+###### Welcome to tripplanner v1.0 Bryce
+###### Your trip starts off in New York
+###### And you are traveling to Italy
+###### You will be traveling by Uber
+###### It will take approximately 102 hours
