@@ -191,3 +191,161 @@ print(max_num(-5, -10, -10))
 # should print -5
 print(max_num(2, 3, 3))
 # should print "It's a tie!"
+
+
+
+######### APPEND LIST WITH THE LENGTH OF THE ORIGINAL LIST ################
+#Write your function here
+def append_size(my_list):
+  my_list.append(len(my_list))
+  return my_list
+#Uncomment the line below when your function is done
+print(append_size([23, 42, 108]))
+
+
+############# APPEND LIST AFTER ADDING THE LAST TWO COMPONENTS OF THE LIST TOGETHER 3 TIMES ##############
+#Write your function here
+def append_sum(my_list):
+  my_list.append(my_list[-1] + my_list[-2])
+  my_list.append(my_list[-1] + my_list[-2])
+  my_list.append(my_list[-1] + my_list[-2])
+  return my_list
+#Uncomment the line below when your function is done
+print(append_sum([1, 1, 2]))
+
+
+######### The function should return the last element of the list that contains more elements ###########
+######### If both lists are the same size, then return the last element of my_list1 ##############
+# Write your function here
+def larger_list(my_list1, my_list2):
+  if len(my_list1) >= len(my_list2):
+    return my_list1[-1]
+  else:
+    return my_list2[-1]
+#Uncomment the line below when your function is done
+print(larger_list([4, 10, 2, 5], [-10, 2, 5, 10]))
+
+
+################Does item appear more than n ##########
+def more_than_n(my_list, item, n):
+  if my_list.count(item) > n:
+    return True
+  else:
+    return False
+#Uncomment the line below when your function is done
+print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
+
+
+############# Combine lists and sort ##########
+#Write your function here
+def combine_sort(my_list1, my_list2):
+  unsorted = my_list1 + my_list2
+  sortedList = sorted(unsorted)
+  return sortedList
+#Uncomment the line below when your function is done
+print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
+
+
+#Write your function here - Print every three numbers from the start including 100
+def every_three_nums(start):
+  return list(range(start, 101, 3))
+#Uncomment the line below when your function is done
+print(every_three_nums(91))
+
+
+#Write your function here
+def remove_middle(my_list, start, end):
+  return my_list[:start] + my_list[end+1:]
+#Uncomment the line below when your function is done
+print(remove_middle([4, 8, 15, 16, 23, 42], 1, 3))
+
+
+
+def double_index(my_list, index):
+  # Checks to see if index is too big
+  if index >= len(my_list):
+    return my_list
+  else:
+    # Gets the original list up to index
+    my_new_list = my_list[0:index]
+ # Adds double the value at index to the new list 
+  my_new_list.append(my_list[index]*2)
+  #  Adds the rest of the original list
+  my_new_list = my_new_list + my_list[index+1:]
+  return my_new_list
+  print(double_index([3, 8, -10, 12], 2))
+
+
+def middle_element(my_list):
+  if len(my_list) % 2 == 0:
+    sum = my_list[int(len(my_list)/2)] + my_list[int(len(my_list)/2) - 1]
+    return sum / 2
+  else:
+    return my_list[int(len(my_list)/2)]
+
+#Write your function here
+
+def divisible_by_tens(numbers):
+  count = 0
+  for number in numbers:
+    if (number % 10 == 0):
+      count += 1
+  return count
+
+def divisible_by_ten(nums):
+  for num in nums:
+    if num % 10 == 0:
+      print(num)
+
+
+print(divisible_by_tens([20, 25, 30, 35, 40]))
+
+#Uncomment the line below when your function is done
+print(divisible_by_ten([20, 25, 30, 35, 40]))
+
+
+#Write your function here
+def add_greetings(names):
+  new_list = []
+  for name in names:
+    new_list.append("Hello, " + name)
+  return new_list
+
+#Uncomment the line below when your function is done
+print(add_greetings(["Owen", "Max", "Sophie"]))
+
+
+#Write your function here
+def delete_starting_evens(my_list):
+  while (len(my_list) > 0 and my_list[0] % 2 == 0):
+    my_list = my_list[1:]
+  return my_list
+
+#Uncomment the lines below when your function is done
+print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
+print(delete_starting_evens([4, 8, 10]))
+
+
+#Write your function here
+def odd_indices(my_list):
+  my_new_list = []
+  for index in range(1, len(my_list), 2):
+    my_new_list.append(my_list[index])
+  return my_new_list
+
+#Uncomment the line below when your function is done
+print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+
+
+
+#Write your function here
+def exponents(bases, powers):
+  new_list = []
+  for base in bases:
+    for power in powers:
+      new_list.append(base ** power)
+  return new_list
+  
+#Uncomment the line below when your function is done
+print(exponents([2, 3, 4], [1, 2, 3]))
