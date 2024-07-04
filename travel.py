@@ -184,7 +184,7 @@ destination_setup("New York", "Italy", estimate, "Uber")
 ###### It will take approximately 102 hours
 
 
-# VERY LONG AND IMPORTANT EXAMPLE ########################
+#################### VERY LONG AND IMPORTANT EXAMPLE THAT I HAD TO WORK THROUGH ########################
 train_mass = 22680
 train_acceleration = 10
 train_distance = 100
