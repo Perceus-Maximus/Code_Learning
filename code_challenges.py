@@ -349,3 +349,63 @@ def exponents(bases, powers):
   
 #Uncomment the line below when your function is done
 print(exponents([2, 3, 4], [1, 2, 3]))
+
+
+
+#Write your function here
+def larger_sum(lst1, lst2):
+  sum1 = 0
+  sum2 = 0
+  for number in lst1:
+    sum1 += number
+  for number in lst2:
+    sum2 += number
+    return lst1
+  else:
+    return lst2 
+#Uncomment the line below when your function is done
+print(larger_sum([1, 9, 5], [2, 3, 7]))
+
+
+
+#Write your function here
+def over_nine_thousand(lst):
+  sum = 0 
+  for number in lst:
+    sum += number
+    if sum > 9000:
+        break
+  return sum
+#Uncomment the line below when your function is done
+print(over_nine_thousand([8000, 900, 120, 5000]))
+
+
+
+#Write your function here
+def max_num(nums):
+  return max(nums)
+
+#Uncomment the line below when your function is done
+print(max_num([50, -10, 0, 75, 20]))
+
+#######ALTERNATIVE OPTION
+def max_nums(numbers):
+  maximum = numbers[0]
+  for number in numbers:
+    if number > maximum:
+      maximum = number
+  return maximum
+
+
+  #Write your function here
+def same_values(lst1, lst2):
+  lst1 = []
+  lst2 = []
+  new_list = []
+  for index in range(len(lst1)):
+    if lst1[0] == lst2[0]:
+      return new_list.append()
+
+#Uncomment the line below when your function is done
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
+  print(max_nums([50, -10, 0, 75, 20]))
